@@ -1,6 +1,6 @@
 interface ChildProps{
 	color:string;
-    onClick: () => void;
+  onClick: () => void;
 }
 
 // Interfaces provide security checks, first is to ensure whether
@@ -14,7 +14,7 @@ interface ChildProps{
 // which are optional properties provided by react components
 export const Child = ({color, onClick} : ChildProps)=>{
 	return <div>
-    {color}
+  {color}
     <button onClick={onClick}>Click me</button>
     </div>
 }
