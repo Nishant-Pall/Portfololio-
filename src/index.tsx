@@ -1,12 +1,13 @@
 import ReactDom from 'react-dom';
+import GuestList from './state/GuestList';
 
-const App = () =>{
+const App = () => {
 	return <div>
-		<h1>YOOO</h1>
+		<GuestList />
 	</div>
 }
 
 ReactDom.render(
-	<App/>,
+	<App />,
 	document.querySelector('#root')
 )
