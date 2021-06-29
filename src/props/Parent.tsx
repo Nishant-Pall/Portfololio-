@@ -5,7 +5,7 @@ import {ChildAsFc} from './Child'
 // prop, this will give error if we did this in Child component
 // because the interface doesn't know about the children prop
 // whereas ChildAsFc, knows because we're using React.FunctionComponent
-const Parent= ()=>{  
+const Parent= ()=>{
 	return <ChildAsFc color="red" onClick={()=>console.log("Clicked")}>
     This is default children prop
         </ChildAsFc>
