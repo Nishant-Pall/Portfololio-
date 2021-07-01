@@ -1,21 +1,10 @@
 import ReactDom from 'react-dom';
-import UserSearch from './classes/UserSearch';
+import UserSearch from './refs/userSearch';
 
-interface User {
-	name: string,
-	age: number
-}
 
-const users: User[] = [
-	{ name: "alex", age: 20 },
-	{ name: "alex", age: 20 },
-	{ name: "alex", age: 20 },
-]
 const App = () => {
 	return <div>
-		<UserSearch
-			users={users}
-		/>
+		<UserSearch />
 	</div>
 }
 
