@@ -1,9 +1,21 @@
 import ReactDom from 'react-dom';
-import EventComponent from './events/EventComponent'
+import UserSearch from './classes/UserSearch';
 
+interface User {
+	name: string,
+	age: number
+}
+
+const users: User[] = [
+	{ name: "alex", age: 20 },
+	{ name: "alex", age: 20 },
+	{ name: "alex", age: 20 },
+]
 const App = () => {
 	return <div>
-		<EventComponent />
+		<UserSearch
+			users={users}
+		/>
 	</div>
 }
 
